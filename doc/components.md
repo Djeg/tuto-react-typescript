@@ -18,7 +18,7 @@ Si les 3 conditions sont remplie, alors nous pouvons utiliser cette fonction com
 import { render } from 'react-dom'
 import React, { ReactElement } from 'react'
 
-const Hello = () => <p>Hello</p>
+const Hello = (): ReactElement => <p>Hello</p>
 
 render(<Hello />, document.getElementById('root'))
 ```
@@ -66,4 +66,23 @@ import { render } from 'react-dom'
 import Hello from './Hello'
 
 render(<Hello />, document.getElementById('root'))
+```
+
+## Le composant **`App`**
+
+Le composant **`App`** correspond au composant principal de notre application. C'est le point de départ de toutes applications react.
+
+### Éxemple
+
+```tsx
+import React, { ReactElement } from 'react'
+import Hello from './Hello'
+
+export default function App(): ReactElement {
+  return (
+    <main>
+      <Hello />
+    </main>
+  )
+}
 ```
