@@ -2,6 +2,12 @@
 
 Tutoriel complet pour utiliser react avec typescript.
 
+## Créer un projet react & typescript
+
+1. Créer un répertoire vide
+2. Ouvrir le répertoire vide avec vscode
+3. Dans un terminal lance la commande : `npx create-react-app . --template cra-template-typescript`
+
 ## Apprendre React
 
 - [Chapitre 1 - Les composants](./doc/components.md)
