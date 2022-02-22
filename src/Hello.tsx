@@ -1,5 +1,17 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 
-export default function Hello() {
-  return <p>Coucou les amis</p>
+type HelloProps = {
+  name: string
+  age: number
+}
+
+export default function Hello(props: HelloProps): ReactElement {
+  const name = props.name
+  const age = props.age
+
+  return (
+    <p>
+      Coucou {name}, vous avez {age} ans
+    </p>
+  )
 }
