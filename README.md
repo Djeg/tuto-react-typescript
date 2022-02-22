@@ -8,6 +8,10 @@ Tutoriel complet pour utiliser react avec typescript.
 - [Chapitre 2 - Les props](./doc/props.md)
 - [Chapitre 3 - Le Style](./doc/style.md)
 
+## Les exos
+
+- [Session 1](./doc/exos/session1.md)
+
 ## Les extensions utiles
 
 ### [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
