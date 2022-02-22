@@ -25,3 +25,5 @@ C'est une extension permettant de formater le code javascript et typescript auto
 - Ouvrir l'inviter de commande à nouveau
 - Rechercher "setting" et cliquez sur "Open User Settings"
 - Rechercher "format" et cliquez sur "Format on Save"
+
+### [L'extension pour styled components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
