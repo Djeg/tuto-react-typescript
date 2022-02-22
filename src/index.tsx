@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import Hello from './Hello'
 import { render } from 'react-dom'
 
 const root = document.getElementById('root')
@@ -13,8 +14,6 @@ const presentation = (name: string, age: number): ReactElement => (
     Vous avez {age} ans
   </p>
 )
-
-const Hello = () => <p>Bonjour :)</p>
 
 const name: string = 'john'
 const age: number = 36

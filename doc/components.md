@@ -22,3 +22,48 @@ const Hello = () => <p>Hello</p>
 
 render(<Hello />, document.getElementById('root'))
 ```
+
+## Quelques petites règles à réspécter
+
+Généralement un composant à son propre fichier `.tsx`. Chaque composants devra être dans son propre fichier.
+
+Cette règle n'est pas obligatoire mais fortement conseillé.
+
+En React, il n'éxiste pas de façon précise de s'organiser. L'oganisation est libre chaque développer peut créer sa propre organisation, par projet.
+
+Un composant doit être l'**export par défaut** de son fichier `.tsx`.
+
+### Éxemple de composant hello
+
+Export d'un composant Hello en utilisant une fonction fléchée
+
+```tsx
+// src/Hello.tsx
+import React, { ReactElement } from 'react'
+
+const Hello = (): ReactElement => <p>Coucou les amis</p>
+
+export default Hello
+```
+
+Export d'un composant Hello en utilisant une fonction classique
+
+```tsx
+// src/Hello.tsx
+import React, { ReactElement } from 'react'
+
+export default function Hello(): ReactElement {
+  return <p>Coucou les amis</p>
+}
+```
+
+Utilisation du composant Hello :
+
+```tsx
+// src/index.tsx
+import React from 'react'
+import { render } from 'react-dom'
+import Hello from './Hello'
+
+render(<Hello />, document.getElementById('root'))
+```
