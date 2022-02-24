@@ -19,6 +19,7 @@ Tutoriel complet pour utiliser react avec typescript.
 ## Les exos
 
 - [Session 1](./doc/exos/session1.md)
+- [Session 2](./doc/exos/session2.md)
 
 ## Les extensions utiles
 
