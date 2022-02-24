@@ -1,23 +1,24 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useState } from 'react'
 import ToDoList from './exoSession1/ToDoList'
 
-function MyButton(): ReactElement {
-  /**
-   * Contient la fonction qui s'éxécutera lors du clique
-   * sur le bouton
-   */
-  const faireQuelqueChose = (event: any): void => {
-    console.log(event)
-    console.log('click')
+function Player(): ReactElement {
+  // Création d'une variable d'état "isPlaying"
+  const [isPlaying, setIsPlaying] = useState(false)
+
+  const changeIsPlaying = (): void => {
+    // On change notre état "isPlaying" en lui donnant
+    // L'inverse de son état en cours
+    setIsPlaying(!isPlaying)
   }
 
   return (
-    <button type="button" onClick={faireQuelqueChose}>
-      Cliquez moi
-    </button>
+    <div>
+      <button onClick={changeIsPlaying}>{isPlaying ? 'Pause' : 'Play'}</button>
+      <p>{isPlaying ? `Joue de la musique` : `Ne joue pas de musique`}</p>
+    </div>
   )
 }
 
 export default function App(): ReactElement {
-  return <MyButton />
+  return <Player />
 }
