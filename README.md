@@ -15,6 +15,7 @@ Tutoriel complet pour utiliser react avec typescript.
 - [Chapitre 3 - Le Style](./doc/style.md)
 - [Chapitre 4 - Les Événements](./doc/events.md)
 - [Chapitre 5 - Le State](./doc/state.md)
+- [Chapitre 6 - Les effets](./doc/effects.md)
 
 ## Les exos
 
